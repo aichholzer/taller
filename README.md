@@ -1,8 +1,8 @@
 # Taller: API
 
 * Introducción: APIs de alto rendimiento.
-* Diseño de protocolos de seguridad para API.
-* Manejo de sesiones en APIs de alto rendimiento.
+* Diseño de protocolos de seguridad.
+* Manejo de sesiones.
 
 ### Requisitos
 
