@@ -12,27 +12,14 @@
 
 ```
 > mkdir taller
-> cd !$ && git clone git@github.com:aichholzer/taller.git
-> npm install
+> cd !$ && git clone git@github.com:aichholzer/taller.git .
+> npm install && npm install -g grunt-cli
 ```
 
-### Introducción
-
 ```
-> cd introduccion
-> node app/
+> cp .env.sample .env
 ```
 
-### Protocolos de seguridad
-
 ```
-> cd protocolos
-> node app/
-```
-
-### Sesiones
-
-```
-> cd sesiones
-> node app/
+> grunt nodemon
 ```
