@@ -1,13 +1,15 @@
 'use strict';
 
 
+const firma = attract('core/library/firma');
+
 module.exports = (router, controller) => {
 
-    router.route('/usuario/:usuario?')
+    router.route('/usuarios/:usuario?')
         .post(controller.crear)
-        .get(controller.leer)
-        .put(controller.actualizar)
-        .delete(controller.eliminar);
+        .get(firma, controller.leer)
+        .put(firma, controller.actualizar)
+        .delete(firma, controller.eliminar);
 
     return router;
 };

@@ -1,0 +1,17 @@
+{
+    "400": {
+        "10": "Solicitud incorrecta."
+    },
+    "401": {
+        "10": "Credenciales incorrectas."
+    },
+    "403": {
+        "10": "No tienes permiso para acceder a este recurso."
+    },
+    "404": {
+        "10": "Recurso no disponible."
+    },
+    "500": {
+        "10": "Error desconocido."
+    }
+}

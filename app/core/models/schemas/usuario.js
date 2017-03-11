@@ -30,9 +30,17 @@ module.exports = mongoose => {
                 }
             },
             meta: {
+                entropia: {
+                    type: String,
+                    default: null
+                },
                 fechaDeCreacion: {
                     type: Date,
                     default: Date.now
+                },
+                ultimaSesion: {
+                    type: Date,
+                    default: null
                 }
             }
         },
@@ -41,6 +49,18 @@ module.exports = mongoose => {
             versionKey: false
         }
     );
+
+    schema.statics = {
+
+        login: function (usuario) {
+            const query = { usuario: usuario };
+            const update = { 'meta.ultimaSesion': new Date() };
+
+            return this.findOneAndUpdate(query, update)
+                .lean()
+                .exec();
+        }
+    };
 
     return mongoose.model('Usuario', schema, 'usuarios');
 };

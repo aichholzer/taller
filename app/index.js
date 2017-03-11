@@ -35,7 +35,8 @@ models
             bodyParser.urlencoded({ extended: false }),
             compression(),
             serveFavicon(`${__dirname}/public/img/favicon.png`),
-            router(express)
+            router(express),
+            attract('core/error')
         );
 
         app.listen(port, () => console.log(`Up on port: ${port}`));
