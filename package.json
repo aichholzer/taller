@@ -28,17 +28,17 @@
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "express": "^4.14.0",
-    "mongoose": "^4.6.6",
+    "mongoose": "^5.1.1",
     "salvus": "^1.0.0",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
-    "dotenv": "^4.0.0",
+    "dotenv": "^5.0.1",
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-jscs": "^3.0.1",
     "grunt-nodemon": "^0.4.2",
     "jscs": "^3.0.7",
-    "yargs": "^7.0.2"
+    "yargs": "^11.0.0"
   }
 }
